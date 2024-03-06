@@ -1,0 +1,153 @@
+/*CSS reset estilos de navegadores y variables root*/
+* {
+    box-sizing: border-box;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: auto;
+    width: 100%;
+    min-height: 100dvh;
+    background-color: var(--color-fondo);
+    color: var(--color-principal);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+:root {
+    /*fuente logo*/
+    --font-caveat: "Caveat", cursive;
+    /*fuente titulos*/
+    --font-carme: "Carme", sans-serif;
+    /*fuente principal*/
+    --font-open: "Open Sans", sans-serif;
+    /*fuente sobre mi estilos html*/
+    --font-coming: "Coming Soon", cursive;
+    /*fuente de lineas*/
+    --font-flow: "Flow Rounded", system-ui;
+    --color-fondo: #010409;
+    --color-fondo-resaltado: #0D1117;
+    --color-principal: #E6EDF3;
+    --color-resaltado: #A353FD;
+    --color-secundario: #F3EAF4;
+}
+
+/*ESTILOS BARRA DE MENU Y BARRA RESPONSIVE*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: var(--color-fondo);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logo {
+    max-width: 10rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    margin-top: 15px;
+    gap: 3rem;
+}
+
+.nav-list li a {
+    font-family: var(--font-carme);
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--color-principal);
+    transition: color 0.1s ease-in-out;
+}
+
+.nav-list.link:hover {
+    color: var(--color-resaltado);
+
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width:734px) {
+
+    header{
+        position: absolute;
+    }
+    
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        color: var(--color-principal);
+        cursor: pointer;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: fixed;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: var(--color-fondo-resaltado);
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+
+    }
+
+    .nav-list.link {
+        color: var(--color-principal);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

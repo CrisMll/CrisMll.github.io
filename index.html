@@ -1,42 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-        <meta name="description"
-            content="Esta web está dedicada a presentar el portfolio de CrisMll">
-        <meta name="keywords"
-            content="portfolio, desarrollo web">
-        <link rel="canonical" href="https://www.crismll.dev">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="apple-touch-icon" href="images/favicon/favicon.ico">
-        <title>Proyecto PlastiScan</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/favicon/favicon.ico">
+    <meta name="description" content="Esta web está dedicada a presentar el portfolio de CrisMll">
+    <meta name="keywords" content="portfolio, desarrollo web">
+    <link rel="canonical" href="https://www.crismll.dev">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Carme&family=Coming+Soon&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Flow+Rounded&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Portfolio de CrisMll</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-    <header>
-        <img class="logo-cris" src="images/logo-nombre.jpg" alt="logo de CrisMll">
+    <header class="header">
+        <a href="#hero"><img src="images/logo-nombre.jpg" alt="imagen del logo" class="logo"></a>
         <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
-        <nav class="nav-bar" id="nav">
+        <nav class="nav" id="nav">
             <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-lg"></i></button>
-            <ul class="secciones-links">
-                <li><a href="#sobre-mi" title="Ir a la sección sobre mí">Sobre mí</a></li>
-                <li><a href="#proyectos" title="Ir a la sección Proyectos">Proyectos</a></li>
-                <li><a href="#formacion" title="Ir a la sección Formación">Formación</a></li>
-                <li><a href="#contacto" title="Ir a la sección de Contacto">Contacto</a></li>
+            <ul class="nav-list">
+                <li>
+                    <a href="#sobre-mi" class="nav-list link" title="Ir a la sección sobre mí">Sobre mí</a>
+                </li>
+                <li>
+                    <a href="#proyectos" class="nav-list link" title="Ir a la sección Proyectos">Proyectos</a>
+                </li>
+                <li>
+                    <a href="#formacion" class="nav-list link" title="Ir a la sección Formación">Formación</a>
+                </li>
+                <li>
+                    <a href="#contacto" class="nav-list link" title="Ir a la sección de Contacto">Contacto</a>
+                </li>
             </ul>
         </nav>
-
+    </header>
         <section class="hero">
             <article class="hero inicio" >
                 <h1 class="titulo">
@@ -50,10 +57,7 @@
                 <blockquote class="cita" title="Cita de Martin LeBlanc">"A user interface is like a joke. If you have to explain it, it's not that good."</blockquote>
             </article>
         </section>
-    </header>
-
     <main>
-
         <section>
             <h2 class="subtitulos" id="sobre-mi">Sobre mí</h2>
             <section class="contenedor-about">
@@ -292,6 +296,6 @@
     <footer>
         CrisMll&copy; 2024
     </footer>
-
+<script src="js/main.js"></script>
 </body>
 </html>
