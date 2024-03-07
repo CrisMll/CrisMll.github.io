@@ -17,11 +17,20 @@
     --font-coming: "Coming Soon", cursive;
     /*fuente de lineas*/
     --font-flow: "Flow Rounded", system-ui;
-    --color-fondo: #010409;
-    --color-fondo-resaltado: #0D1117;
-    --color-principal: #E6EDF3;
-    --color-resaltado: #A353FD;
-    --color-secundario: #F3EAF4;
+    --color-fondo: rgba(1, 4, 9, 1);
+    --color-fondo-resaltado: rgba(13, 17, 23, 1);
+    --color-principal: rgba(230, 237, 243, 1);
+    --color-resaltado: rgba(163, 83, 253, 1);
+    --color-secundario: rgba(243, 234, 244, 1);
+    --color-rosa:rgba(232, 48, 191, 1);
+    --color-amarillo:rgba(234, 221, 104, 1);
+    --color-azul:rgba(96, 196, 202, 1);
+    --color-verde:rgba(11, 233, 0, 1);
+    --color-salmon:rgba(243, 208, 197, 1);
+    
+
+
+
 }
 
 body {
@@ -43,6 +52,28 @@ p {
     text-wrap: pretty;
 }
 
+
+.divider{
+    border: 0.5px solid var(--color-principal);
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.span-text-purple{
+    color: var(--color-resaltado);
+}
+
+.span-text-rosa{
+    color: var(--color-rosa);
+}
+
+.span-text-amarillo{
+    color: var(--color-amarillo);
+}
+
+.span-text-verde{
+    color: var(--color-verde);
+}
 
 /*MENU AND RESPONSIVE BAR STYLES*/
 
@@ -174,16 +205,6 @@ header {
     color: var(--color-secundario);
 }
 
-.span-text-purple{
-    color: var(--color-resaltado);
-}
-
-.divider{
-    border: 0.5px solid var(--color-principal);
-    width: 70vw;
-    margin: 0 auto;
-}
-
 /*ABOUT ME SECTION*/
 
 .h2-about{
@@ -197,8 +218,6 @@ header {
     margin: 0 auto;
     margin-bottom: 40px;
     border-radius: 15px;
-    display: flex;
-    justify-content: space-evenly;
 }
 
 .col-2{
@@ -206,21 +225,47 @@ header {
     text-align: right;
 }
 
+
+.col-4{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid red;
+}
+
 .img-cris-container{
-    width: fit-content;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    border: 1px solid blue;
 }
 
 .img-cris-img{
-    border-radius: 55px;
+    border-radius: 45px;
     width: 100%;
-    max-width: 300px;
+    max-width: 250px;
 }
 
-.row{
+.mail-link{
+    text-decoration: none;
+    color: var(--color-principal);
+}
+
+.box-contact{
+    border: 1px solid yellow;
+}
+
+.row-contact{
+    border: 1px solid orange;
+}
+
+.col-3{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
 }
 
+.col-button{
 
-
-
+}
