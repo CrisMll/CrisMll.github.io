@@ -1,13 +1,22 @@
 //controles javascript para estilar el menú de navegación responsive
 
 const nav = document.querySelector("#nav");
-const abrir = document.querySelector("#abrir");
-const cerrar = document.querySelector("#cerrar");
+const open = document.querySelector("#open");
+const close = document.querySelector("#close");
 
-abrir.addEventListener("click", () => {
+open.addEventListener("click", () => {
     nav.classList.add("visible");
 })
 
-cerrar.addEventListener("click", () => {
+close.addEventListener("click", () => {
     nav.classList.remove("visible");
 })
+
+
+//funcion para la animación del hero
+
+function showSection() {
+    setTimeout(function() {
+        document.getElementById('hero').classList.add('appear');
+    }, 500);
+}

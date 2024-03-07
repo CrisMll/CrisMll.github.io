@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,19 +16,21 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Carme&family=Coming+Soon&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Flow+Rounded&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Flow+Rounded&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Portfolio de CrisMll</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+
+<body body onload="showSection()">
     <header class="header">
         <a href="#hero"><img src="images/logo-nombre.jpg" alt="imagen del logo" class="logo"></a>
-        <button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
+        <button class="open-menu" id="open"><i class="bi bi-list"></i></button>
         <nav class="nav" id="nav">
-            <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-lg"></i></button>
+            <button class="close-menu" id="close"><i class="bi bi-x-lg"></i></button>
             <ul class="nav-list">
                 <li>
                     <a href="#sobre-mi" class="nav-list link" title="Ir a la sección sobre mí">Sobre mí</a>
@@ -44,7 +47,118 @@
             </ul>
         </nav>
     </header>
-        <section class="hero">
+
+    <section class="hero hero-section">
+        <article class="hero hero-container" id="hero">
+            <h1 class="hero hero-title">
+                <span class="span span-text-purple">Cristina</span>
+                <span>Morales López-Lillo</span>
+            </h1>
+            <h2 class="hero hero-subtitle">
+                <span>&lt;Web</span>
+                <span class="span span-text-purple">Developer &#47;&gt;</span>
+            </h2>
+            <blockquote class="cite" title="Cita de Martin LeBlanc">"A user interface is like a joke. If you have to
+                explain it, it's not that good."</blockquote>
+        </article>
+    </section>
+    
+    <div class="divider"></div>
+
+    <section class="section section-about">
+        <h2 class="h2 h2-about">Sobre mí</h2>
+        <article class="container">
+            <div class="row">
+                <div class="col-7">
+                    <div class="box">
+                        <div class="row">
+                            <div class="col-2">&lt;body&gt;</div>
+                            <div class="col-10"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">&lt;h1&gt;</div>
+                            <div class="col-10"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-10"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">&lt;/h1&gt;</div>
+                            <div class="col-10"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">&lt;p&gt;</div>
+                            <div class="col-10"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-10">
+                                <p>
+                                    Soy estudiante de <span class="span span-text-purple">Desarrollo de Aplicaciones Web</span>.<br/>
+                                    Desde pequeña siempre me ha gustado curiosear con la informática, mis primeros recuerdos se remontan a las
+                                    interminables pantallas de carga de Windows 95 y los juegos en disquette. Es por eso que, tras muchos años
+                                    dedicándome a las contabilidad, decidí dar un giro y lanzarme a lo que realmente me apasiona.
+                                </p>
+                                <p>
+                                    Soy una persona comprometida y bastante curiosa, me encanta aprender tecnologías nuevas y conocer gente.<br/>
+                                    Cuando no estoy tecleando, dedico mi tiempo al deporte, a tardes de juegos de mesa con amigos o salir a disfrutar
+                                    de una buena hamburguesa.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">&lt;/p&gt;</div>
+                            <div class="col-10"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">&lt;footer&gt;</div>
+                            <div class="col-10"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <div class="col-10">
+                                <a href="mailto:crismll.dev@gmail.com" id="mail-link" class="mail-link"><p>&lt;a href="mailto:crismll.dev@gmail.com"&gt;Escríbeme&lt;/a&gt;</p></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">&lt;/footer&gt;</div>
+                            <div class="col-10"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">&lt;body&gt;</div>
+                            <div class="col-10"></div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="img-cris img-cris-container">
+                        <picture class="img-cris img-cris-picture">
+                            <img src="images/img-cris-logo.png" alt="imagen de chica programando" class="img-cris img-cris-img">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </article>
+    
+    </section>
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
+    
+    <!--
+    <section class="hero">
             <article class="hero inicio" >
                 <h1 class="titulo">
                     <span class="span nombre" >Cristina</span> 
@@ -296,6 +410,4 @@
     <footer>
         CrisMll&copy; 2024
     </footer>
-<script src="js/main.js"></script>
-</body>
-</html>
+    -->

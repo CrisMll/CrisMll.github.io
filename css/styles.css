@@ -1,28 +1,9 @@
-/*CSS reset estilos de navegadores y variables root*/
+/*CSS reset and variables*/
 * {
     box-sizing: border-box;
     min-width: 0;
     margin: 0;
     padding: 0;
-}
-
-body {
-    height: auto;
-    width: 100%;
-    min-height: 100dvh;
-    background-color: var(--color-fondo);
-    color: var(--color-principal);
-}
-
-h1,
-h2,
-h3,
-h4 {
-    text-wrap: balance;
-}
-
-p {
-    text-wrap: pretty;
 }
 
 :root {
@@ -43,13 +24,33 @@ p {
     --color-secundario: #F3EAF4;
 }
 
-/*ESTILOS BARRA DE MENU Y BARRA RESPONSIVE*/
+body {
+    height: 100%;
+    width: 100%;
+    min-height: 100dvh;
+    background-color: var(--color-fondo);
+    color: var(--color-principal);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-wrap: balance;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+
+/*MENU AND RESPONSIVE BAR STYLES*/
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    padding: 4rem;
     background-color: var(--color-fondo);
     position: fixed;
     top: 0;
@@ -66,6 +67,7 @@ header {
     display: flex;
     margin-top: 15px;
     gap: 3rem;
+    width: max-content;
 }
 
 .nav-list li a {
@@ -81,8 +83,8 @@ header {
 
 }
 
-.abrir-menu,
-.cerrar-menu {
+.open-menu,
+.close-menu {
     display: none;
 }
 
@@ -90,10 +92,11 @@ header {
 
     header{
         position: absolute;
+        padding: 2rem;
     }
     
-    .abrir-menu,
-    .cerrar-menu {
+    .open-menu,
+    .close-menu {
         display: block;
         border: 0;
         font-size: 1.25rem;
@@ -134,19 +137,89 @@ header {
     }
 }
 
+/*HERO STYLES*/
 
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
 
+.hero-container{
+    text-align: center;
+    margin: 0 auto;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
 
+.appear{
+    opacity: 1;
+}
 
+.hero-title{
+    font-size: 1.25rem;
+    font-family: var(--font-carme);
+    margin: 10px 0;
+}
 
+.hero-subtitle{
+    font-size: 4rem;
+    font-family: var(--font-carme);
+}
 
+.cite{
+    font-style: italic;
+    color: var(--color-secundario);
+}
 
+.span-text-purple{
+    color: var(--color-resaltado);
+}
 
+.divider{
+    border: 0.5px solid var(--color-principal);
+    width: 70vw;
+    margin: 0 auto;
+}
 
+/*ABOUT ME SECTION*/
 
+.h2-about{
+    text-align: center;
+    margin: 40px;
+}
 
+.container{
+    background-color: var(--color-fondo-resaltado);
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.col-2{
+    font-family: var(--font-coming);
+    text-align: right;
+}
 
+.img-cris-container{
+    width: fit-content;
+}
+
+.img-cris-img{
+    border-radius: 55px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 
