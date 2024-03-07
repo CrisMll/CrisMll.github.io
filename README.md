@@ -1,7 +1,7 @@
 
 # CrisMll Portfolio 👩‍💻
 
-Hi! I am CrisMll and this is my first portfolio.This is a personal project that showcases my skills and experience. Here, you can learn more about me, my education, and my current projects.
+Hi! I am CrisMll and this is my portfolio.This is a personal project that showcases my skills and experience. Here, you can learn more about me, my education, and my current projects.
 
 🛠️I will be using HTML, CSS, Bootstrap, JavaScript, and PHP to create this website. 
 
