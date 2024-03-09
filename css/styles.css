@@ -22,12 +22,12 @@
     --color-principal: rgba(230, 237, 243, 1);
     --color-resaltado: rgba(163, 83, 253, 1);
     --color-secundario: rgba(243, 234, 244, 1);
-    --color-rosa:rgba(232, 48, 191, 1);
-    --color-amarillo:rgba(234, 221, 104, 1);
-    --color-azul:rgba(96, 196, 202, 1);
-    --color-verde:rgba(11, 233, 0, 1);
-    --color-salmon:rgba(243, 208, 197, 1);
-    
+    --color-rosa: rgba(232, 48, 191, 1);
+    --color-amarillo: rgba(234, 221, 104, 1);
+    --color-azul: rgba(96, 196, 202, 1);
+    --color-verde: rgba(11, 233, 0, 1);
+    --color-salmon: rgba(243, 208, 197, 1);
+
 
 
 
@@ -53,25 +53,25 @@ p {
 }
 
 
-.divider{
+.divider {
     border: 0.5px solid var(--color-principal);
     width: 70vw;
     margin: 0 auto;
 }
 
-.span-text-purple{
+.span-text-purple {
     color: var(--color-resaltado);
 }
 
-.span-text-rosa{
+.span-text-rosa {
     color: var(--color-rosa);
 }
 
-.span-text-amarillo{
+.span-text-amarillo {
     color: var(--color-amarillo);
 }
 
-.span-text-verde{
+.span-text-verde {
     color: var(--color-verde);
 }
 
@@ -121,11 +121,11 @@ header {
 
 @media screen and (max-width:734px) {
 
-    header{
+    header {
         position: absolute;
         padding: 2rem;
     }
-    
+
     .open-menu,
     .close-menu {
         display: block;
@@ -170,7 +170,7 @@ header {
 
 /*HERO STYLES*/
 
-.hero-section{
+.hero-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -178,41 +178,41 @@ header {
     height: 100vh;
 }
 
-.hero-container{
+.hero-container {
     text-align: center;
     margin: 0 auto;
     opacity: 0;
     transition: opacity 2s ease-in-out;
 }
 
-.appear{
+.appear {
     opacity: 1;
 }
 
-.hero-title{
+.hero-title {
     font-size: 1.25rem;
     font-family: var(--font-carme);
     margin: 10px 0;
 }
 
-.hero-subtitle{
+.hero-subtitle {
     font-size: 4rem;
     font-family: var(--font-carme);
 }
 
-.cite{
+.cite {
     font-style: italic;
     color: var(--color-secundario);
 }
 
 /*ABOUT ME SECTION*/
 
-.h2-about{
+.h2-about {
     text-align: center;
     margin: 40px;
 }
 
-.container{
+.container {
     background-color: var(--color-fondo-resaltado);
     padding: 20px;
     margin: 0 auto;
@@ -220,63 +220,64 @@ header {
     border-radius: 15px;
 }
 
-.col-2{
+.col-2 {
     font-family: var(--font-coming);
     text-align: right;
 }
 
 
-.col-4{
+.col-4 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
+
 }
 
-.img-cris-container{
+.img-cris-container {
     display: flex;
     justify-content: center;
     width: 100%;
     height: fit-content;
     margin-bottom: 10px;
-    
+
 }
 
-.img-cris-img{
+.img-cris-img {
     border-radius: 45px;
     width: 100%;
     max-width: 250px;
     box-shadow: 0 0 5px rgba(68, 68, 68, 0.4);
 }
 
-.mail-link{
+.mail-link {
     text-decoration: none;
     color: var(--color-principal);
 }
 
-.box-contact{
+.box-contact {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
-.row-contact, .contact-button{
+.row-contact,
+.contact-button {
     color: var(--color-resaltado);
     background-color: var(--color-fondo);
-    border-radius: 10px; 
+    border-radius: 10px;
     border: none;
 }
 
-.row-contact{
+.row-contact {
     margin-bottom: 3px;
     width: fit-content;
     box-shadow: 0 0 5px rgba(68, 68, 68, 0.4);
-    
+
 }
 
-.paraph{
+.paraph {
     display: flex;
     align-items: center;
 }
@@ -287,29 +288,49 @@ header {
     margin-top: 6px;
 }
 
-.bi-clipboard2-fill{
-    margin-left: 15px; 
+.bi-clipboard2-fill {
+    margin-left: 15px;
     cursor: pointer;
 }
 
-.bi-download{
+.bi-download {
     font-weight: 450;
 }
 
-.contact{
+.contact {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3.5px;
-    
+
 }
 
-.contact-button{
+.contact-button {
     width: 100%;
     gap: 5px;
     max-width: 92px;
     box-shadow: 0 0 5px rgba(68, 68, 68, 0.4);
 }
 
+.col-2-body {
+    color: var(--color-azul);
+}
 
+.col-2-h1 {
+    color: var(--color-salmon);
+}
 
+.col-2-p {
+    color: var(--color-amarillo);
+}
+
+.col-2-footer {
+    color: var(--color-verde);
+}
+
+.col-10-line {
+    font-family: var(--font-flow);
+    color: var(--color-amarillo);
+    font-size: 12px;
+    transform: scaleY(2);
+}
