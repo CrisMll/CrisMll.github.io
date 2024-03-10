@@ -40,17 +40,20 @@ cvButton.addEventListener("click", () => {
     window.open(cvUrl, "_blank");
 })
 
+
+//COPIAR EMAIL
+
 const emailLink = document.getElementById('emailLink');
 const clipboardIcon = document.getElementById('email-clipboard');
 
 clipboardIcon.addEventListener('click', () => {
-    const tempInput = document.createElement('input');
-    tempInput.value = emailLink.innerText;
-    document.body.appendChild(tempInput);
-    tempInput.select();
-    document.execCommand('copy');
-    document.body.removeChild(tempInput);
-    alert('Correo electrónico copiado: ' + emailLink.innerText);
+    navigator.clipboard.writeText(emailLink.innerText)
+    .then(() => {
+        alert('Correo electrónico copiado: ' + emailLink.innerText);
+    })
+    .catch(err => {
+        console.error('Error al copiar el correo electrónico: ', err);
+    });
 });
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
