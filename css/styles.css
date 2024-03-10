@@ -328,7 +328,7 @@ header {
 }
 
 .bi-clipboard {
-
+    background-color: var(--color-highlight-background);
     color: var(--color-salmon);
 }
 
@@ -340,6 +340,11 @@ header {
     color: var(--color-salmon);
 }
 
+.email-clipboard{
+    color: transparent;
+    border: none;
+    background-color: var(--color-highlight-background);
+}
 
 
 
