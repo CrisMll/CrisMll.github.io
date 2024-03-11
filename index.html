@@ -63,7 +63,7 @@
             </blockquote>
         </article>
     </section>
-    
+
     <div class="divider"></div>
 
     <section id="about-me">
@@ -91,8 +91,10 @@
                         </div>
                         <div class="row">
                             <div class="col-2"></div>
-                                
-                            <div class="col-10 col-10-line"><h2>Hola, soy Cris.</h2></div>
+
+                            <div class="col-10 col-10-line">
+                                <h2>Hola, soy Cris.</h2>
+                            </div>
                         </div>
                         <div class="row">
                             <div class="col-2 col-2-h1">&lt;/h1&gt;</div>
@@ -111,14 +113,20 @@
                             <div class="col-2"></div>
                             <div class="col-10">
                                 <p>
-                                    Soy estudiante de <span class="span span-text-purple">Desarrollo de Aplicaciones Web</span>.<br/>
-                                    Desde pequeña siempre me ha gustado curiosear con la informática, mis primeros recuerdos se remontan a las
-                                    interminables pantallas de carga de Windows 95 y los juegos en disquete. Es por eso que, tras muchos años
-                                    dedicándome a las contabilidad, decidí dar un giro y lanzarme a lo que realmente me apasiona.
+                                    Soy estudiante de <span class="span span-text-purple">Desarrollo de Aplicaciones
+                                        Web</span>.<br />
+                                    Desde pequeña siempre me ha gustado curiosear con la informática, mis primeros
+                                    recuerdos se remontan a las
+                                    interminables pantallas de carga de Windows 95 y los juegos en disquete. Es por eso
+                                    que, tras muchos años
+                                    dedicándome a las contabilidad, decidí dar un giro y lanzarme a lo que realmente me
+                                    apasiona.
                                 </p>
                                 <p>
-                                    Soy una persona comprometida y bastante curiosa, me encanta aprender tecnologías nuevas y conocer gente.<br/>
-                                    Cuando no estoy tecleando, dedico mi tiempo al deporte, a tardes de juegos de mesa con amigos o salir a disfrutar
+                                    Soy una persona comprometida y bastante curiosa, me encanta aprender tecnologías
+                                    nuevas y conocer gente.<br />
+                                    Cuando no estoy tecleando, dedico mi tiempo al deporte, a tardes de juegos de mesa
+                                    con amigos o salir a disfrutar
                                     de una buena hamburguesa.
                                 </p>
                             </div>
@@ -138,22 +146,24 @@
                         </div>
                     </div>
                 </article>
-            
-                <section class="col-4 col-4-image-contact">
+
+                <article class="col-4 col-4-image-contact">
                     <picture class="img-cris img-cris-container">
                         <img src="images/img-cris-logo.png" alt="girl coding photo" class="img-cris img-cris-img">
                     </picture>
 
                     <section class="row sm-8 contact-box">
                         <div class="container-email">
-                            <p class="email-text"><a href="mailto:crismll.dev@gmail.com" id="email-link">crismll.dev@gmail.com</a></p>
-                            <button id="copyEmail-button" class="email-clipboard" title = "copiar email" onclick="copyEmail()"><i class="bi bi-clipboard"></i></button>
+                            <p class="email-text"><a href="mailto:crismll.dev@gmail.com"
+                                    id="email-link">crismll.dev@gmail.com</a></p>
+                            <button id="copyEmail-button" class="email-clipboard" title="copiar email"
+                                onclick="copyEmail()"><i class="bi bi-clipboard"></i></button>
                         </div>
                         <button id="github" class="contact-box contact-box-button bi bi-github"></button>
                         <button id="linkedin" class="contact-box contact-box-button bi bi-linkedin"></button>
                         <button id="cv" class="contact-box contact-box-button bi bi-download"></button>
                     </section>
-                </section>
+                </article>
             </div>
         </section>
     </section>
@@ -162,38 +172,85 @@
     <section id="projects">
         <h2 class="h2-sections">Proyectos</h2>
 
-        <article class="projects projects-plastiscan">
-            <picture class="projects-img-container">
-                <img src="images/plastiscanweb-hero.jpg" alt="plastiscan project image" class="projects-img projects-img-plastiscan">
-            </picture>
-            <section class="project-description">
-                <p>
+        <section class="container container-projects-container">
+            
+                <article class="projects projects-plastiscan">
+                    <picture class="projects projects-img-container">
+                        <img src="images/plastiscanweb-hero.jpg" alt="plastiscan project image"
+                            class="projects projects-img">
+                    </picture>
+                    <section class="project-description-p">
+                        <h3>PlastiScan IA</h3>
+                        <p>
+                            Aplicación web creada como parte del proyecto final del Diploma Universitario en Inteligencia Artificial Avanzada,
+                            del programa Samsung Innovation Campus.
+                            <span class="span span-text-purple">Me encargué del diseño, desarrollo y despliegue de la aplicación.</span>
+                        </p>
+                        <div class="project-languages">
+                            <p>FIGMA</p>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JS</p>
+                            <p>PYTHON</p>
+                            <p>FLASK</p>
+                        </div>
+                        <div class="projects-buttons">
+                            <a href="https://github.com/CrisMll" target="_blank"><button class="contact-box-button bi bi-github"></button></button></a>
+                            <a href="https://plastiscan.org" target="_blank"><button class="contact-box-button bi bi-box-arrow-right"></button></a>
+                        </div>
+                    </section>
+                </article>
 
-                </p>
-            </section>
-        </article>
+                <article class="projects projects-cookery">
+                    <picture class="projects projects-img-container">
+                        <img src="images/cookery.png" alt="krispis's cookery project image"
+                            class="projects projects-img">
+                    </picture>
+                    <section class="project-description-p">
+                        <h3>Krispi's Cookery</h3>
+                        <p>
+                            Aplicación web creada como <span class="span span-text-purple">proyecto final del Grado Superior Desarrollo de Aplicaciones Web.</span>
+                            Se trata de una web dedicada a la cocina. 
+                            Permite creación de usuario y perfil personal con recetas y favoritos guardados.
+                        </p>
+                        <div class="project-languages">
+                            <p>FIGMA</p>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JS</p>
+                            <p>PHP</p>
+                            <p>SQL</p>
+                        </div>
+                        <div class="projects-buttons">
+                            <a href="https://github.com/CrisMll" target="_blank"><button class="contact-box-button bi bi-github"></button></button></a>
+                            <a href="https://plastiscan.org" target="_blank"><button class="contact-box-button bi bi-box-arrow-right"></button></a>
+                        </div>
+                    </section>
+                </article>
 
-        <article class="projects projects-cookery">
-            <picture class="projects-img-container">
-                <img src="images/cookery.png" alt="krispis's cookery project image" class="projects-img projects-img-cookery">
-            </picture>
-            <section class="project-description">
-                <p>
-                    
-                </p>
-            </section>
-        </article>
-
-        <article class="projects projects-jelikrisp">
-            <picture class="projects-img-container">
-                <img src="" alt="" class="projects-img projects-img-jelikrisp">
-            </picture>
-            <section class="project-description">
-                <p>
-                    
-                </p>
-            </section>
-        </article>
+                <article class="projects projects-jelikrisp">
+                    <picture class="projects projects-img-container">
+                        <img src="images/proyecto-terror" alt="terror movie project image"
+                            class="projects projects-img">
+                    </picture>
+                    <section class="project-description-p">
+                        <h3>JELIKRISP</h3>
+                        <p>
+                            Aplicación web clon de pagina de terror emulando estilo netflix.
+                        </p>
+                        <div class="project-languages">
+                            <p>FIGMA</p>
+                            <p>HTML</p>
+                            <p>CSS</p>
+                            <p>JS</p>
+                        </div>
+                        <div class="projects-buttons">
+                            <a href="https://github.com/CrisMll" target="_blank"><button class="contact-box-button bi bi-github"></button></button></a>
+                            <a href="https://plastiscan.org" target="_blank"><button class="contact-box-button bi bi-box-arrow-right"></button></a>
+                        </div>
+                    </section>
+                </article>
+        </section>
     </section>
 
 

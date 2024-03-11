@@ -38,7 +38,11 @@ body {
     color: var(--color-primary);
 }
 
-h1,h2,h3,h4 {text-wrap: balance;}
+h1,h2,h3,h4 {
+    text-wrap: balance;
+    text-align: center;
+    margin: 15px;
+}
 
 .h2-sections {
     text-align: center;
@@ -355,6 +359,59 @@ header {
 
 /*PROJECTS SECTION STYLES*/
 
+.container-projects-container {
+    padding: 90px 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+.projects {
+    flex: 1;
+    max-width: 300px; 
+    background-color: var(--color-highlight-background);
+}    
+
 .projects-img {
-    max-width: 300px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    aspect-ratio: 13/10;
+    border-radius: 10px; 
+}
+
+.project-description{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-description-p{
+    padding: 15px;
+}
+
+.project-languages{
+    display: flex;
+    justify-content: space-evenly;
+    transition: color 0.1s ease-in-out;
+    cursor:pointer;
+}
+
+.project-languages p{
+    width: min-content;
+}
+
+.project-languages p:hover{
+    width: min-content;
+    transition: color 0.1s ease-in-out;
+    color: var(--color-highlight);
+}
+
+.projects-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 15px;
+
 }

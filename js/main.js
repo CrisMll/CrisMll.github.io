@@ -40,6 +40,12 @@ cvButton.addEventListener("click", () => {
     window.open(cvUrl, "_blank");
 });
 
+const plastiscanButton = document.querySelector("#web-plastiscan");
+cvButton.addEventListener("click", () => {
+    const plastiscanUrl = "https://www.plastiscan.org/";
+    window.open(plastiscanUrl, "_blank");
+});
+
 
 //COPIAR EMAIL
 
