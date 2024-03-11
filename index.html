@@ -33,7 +33,7 @@
             <button class="close-menu" id="close"><i class="bi bi-x-lg"></i></button>
             <ul class="nav-list">
                 <li>
-                    <a href="#sobre-mi" class="nav-list link" title="Ir a la sección sobre mí">Sobre mí</a>
+                    <a href="#about-me" class="nav-list link" title="Ir a la sección sobre mí">Sobre mí</a>
                 </li>
                 <li>
                     <a href="#proyectos" class="nav-list link" title="Ir a la sección Proyectos">Proyectos</a>
@@ -66,14 +66,13 @@
     
     <div class="divider"></div>
 
-    <section class="section section-about">
-        <h2 class="h2 h2-about">Sobre mí</h2>
+    <section id="about-me">
+        <h2 class="h2-sections">Sobre mí</h2>
 
-        <article class="container">
+        <section class="container container-section-about">
 
-            <section class="row">
-                <div class="col-8">
-
+            <div class="row">
+                <article class="col-8 col-8-description-article">
                     <div class="box">
 
                         <div class="row">
@@ -83,7 +82,6 @@
                                 <div class="color-bar color-bar-yellow"></div>
                             </div>
                         </div>
-
                         <div class="row">
                             <div class="col-2 col-2-h1">&lt;h1&gt;</div>
                             <div class="col-10 col-10-line">
@@ -91,13 +89,11 @@
                                 <div class="color-bar color-bar-pink"></div>
                             </div>
                         </div>
-
                         <div class="row">
                             <div class="col-2"></div>
                                 
                             <div class="col-10 col-10-line"><h2>Hola, soy Cris.</h2></div>
                         </div>
-
                         <div class="row">
                             <div class="col-2 col-2-h1">&lt;/h1&gt;</div>
                             <div class="col-10 col-10-line">
@@ -105,14 +101,12 @@
                                 <div class="color-bar color-bar-blue"></div>
                             </div>
                         </div>
-
                         <div class="row">
                             <div class="col-2 col-2-p">&lt;p&gt;</div>
                             <div class="col-10 col-10-line">
                                 <div class="color-bar color-bar-blue"></div>
                             </div>
                         </div>
-
                         <div class="row">
                             <div class="col-2"></div>
                             <div class="col-10">
@@ -129,14 +123,12 @@
                                 </p>
                             </div>
                         </div>
-
                         <div class="row">
                             <div class="col-2  col-2-p">&lt;/p&gt;</div>
                             <div class="col-10 col-10-line">
                                 <div class="color-bar color-bar-yellow"></div>
                             </div>
                         </div>
-
                         <div class="row">
                             <div class="col-2 col-2-body">&lt;body&gt;</div>
                             <div class="col-10 col-10-line">
@@ -145,31 +137,66 @@
                             </div>
                         </div>
                     </div>
-                    <div class="box box-contact">                         
-                    </div>
-                </div>
-                
+                </article>
             
-                <section class="col sm-4">
-                    <div class="img-cris img-cris-container">
-                        <img src="images/img-cris-logo.png" alt="imagen de chica programando" class="img-cris img-cris-img">
-                    </div>
+                <section class="col-4 col-4-image-contact">
+                    <picture class="img-cris img-cris-container">
+                        <img src="images/img-cris-logo.png" alt="girl coding photo" class="img-cris img-cris-img">
+                    </picture>
 
-                    <div class="row sm-8 contact">
+                    <section class="row sm-8 contact-box">
                         <div class="container-email">
-                            <p class="paraph"><a href="mailto:crismll.dev@gmail.com" id="email-link">crismll.dev@gmail.com</a></p>
+                            <p class="email-text"><a href="mailto:crismll.dev@gmail.com" id="email-link">crismll.dev@gmail.com</a></p>
                             <button id="copyEmail-button" class="email-clipboard" title = "copiar email" onclick="copyEmail()"><i class="bi bi-clipboard"></i></button>
                         </div>
-                        <button id="github" class="contact contact-button bi bi-github"></button>
-                        <button id="linkedin" class="contact contact-button bi bi-linkedin"></button>
-                        <button id="cv" class="contact contact-button bi bi-download"></button>
-                    </div>
+                        <button id="github" class="contact-box contact-box-button bi bi-github"></button>
+                        <button id="linkedin" class="contact-box contact-box-button bi bi-linkedin"></button>
+                        <button id="cv" class="contact-box contact-box-button bi bi-download"></button>
+                    </section>
                 </section>
-                
+            </div>
+        </section>
+    </section>
+
+    <div class="divider"></div>
+    <section id="projects">
+        <h2 class="h2-sections">Proyectos</h2>
+
+        <article class="projects projects-plastiscan">
+            <picture class="projects-img-container">
+                <img src="images/plastiscanweb-hero.jpg" alt="plastiscan project image" class="projects-img projects-img-plastiscan">
+            </picture>
+            <section class="project-description">
+                <p>
+
+                </p>
             </section>
         </article>
-    
+
+        <article class="projects projects-cookery">
+            <picture class="projects-img-container">
+                <img src="images/cookery.png" alt="krispis's cookery project image" class="projects-img projects-img-cookery">
+            </picture>
+            <section class="project-description">
+                <p>
+                    
+                </p>
+            </section>
+        </article>
+
+        <article class="projects projects-jelikrisp">
+            <picture class="projects-img-container">
+                <img src="" alt="" class="projects-img projects-img-jelikrisp">
+            </picture>
+            <section class="project-description">
+                <p>
+                    
+                </p>
+            </section>
+        </article>
     </section>
+
+
 
 
     <script src="js/main.js"></script>

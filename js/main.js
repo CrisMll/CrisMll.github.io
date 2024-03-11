@@ -54,5 +54,3 @@ function copyEmail(){
     alert ('Email copiado');
 }
 
-const tootltipEx = document.getElementById('copyEmail-button');
-const tooltip = new bootstrap.Tooltip(tootltipEx, options);
