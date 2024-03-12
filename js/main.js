@@ -13,7 +13,7 @@ close.addEventListener("click", () => {
 });
 
 
-//funcion para la animación del hero
+//hero animations functions
 
 function showSection() {
     setTimeout(function() {
@@ -47,7 +47,7 @@ cvButton.addEventListener("click", () => {
 });
 
 
-//COPIAR EMAIL
+//COPY EMAIL
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
@@ -59,4 +59,6 @@ function copyEmail(){
     navigator.clipboard.writeText(url.textContent);
     alert ('Email copiado');
 }
+
+// PROJECTS SLIDER 
 
