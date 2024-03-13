@@ -28,6 +28,8 @@
     --color-blue: rgba(96, 196, 202, 1);
     --color-green: rgba(11, 233, 0, 1);
     --color-salmon: rgba(243, 208, 197, 1);
+    --color-purple: rgb(172, 122, 230);
+    --color-purple-blue: rgb(134, 144, 236);
 
 
 }
@@ -87,6 +89,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 3;
 }
 
 .logo {max-width: 10rem;}
@@ -118,6 +121,7 @@ header {
     header {
         position: absolute;
         padding: 2rem;
+        z-index: 3;
     }
 
     .open-menu,.close-menu {
@@ -414,6 +418,7 @@ header {
     padding: 100px;
     display: flex;
     align-items: center;
+    z-index: 0;
 }
 
 .swiper-wrapper{
@@ -473,10 +478,57 @@ header {
     color: var(--color-highlight);
 }
 
+/* LANGUAGES SECTION */
 
+.container-section-studies{
+    margin: 0 auto;
+}
 
+.languages-section-heading{
+    margin: 40px 0 60px 0;
+}
 
+.box-mywork{
+    background-color: var(--color-highlight-background);
+    border-radius: 10px;
+    padding: 20px;
+}
 
+.row-mywork{
+    align-items: baseline;
+    
+}
+
+.lang{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 10000px;
+    margin: 10px;
+    border: 1px solid grey;
+    background-color: var(--color-highlight-background);
+}
+
+.lang-html{
+    color: orange;
+}
+.lang-css{
+    color: var(--color-blue);
+}
+.lang-javascript{
+    color: var(--color-yellow);
+}
+.lang-bootstrap{
+    color: var(--color-highlight);
+}
+.lang-php{
+    color: var(--color-purple);
+}
+.lang-sql{
+    color: var(--color-purple-blue);
+}
 
 
 
