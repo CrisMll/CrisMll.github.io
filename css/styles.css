@@ -38,6 +38,8 @@ body {
     min-height: 100dvh;
     background-color: var(--color-background);
     color: var(--color-primary);
+    font-family: var(--font-open);
+    font-family: 'Helvetica Neue';
 }
 
 h1,h2,h3,h4 {
@@ -52,6 +54,10 @@ h1,h2,h3,h4 {
 }
 
 p {text-wrap: pretty;}
+
+i{
+    font-size: 20px;
+}
 
 .divider {
     border: 0.5px solid var(--color-primary);
@@ -390,71 +396,115 @@ header {
 
 /*PROJECTS SECTION STYLES*/
 
-.card{
+.projects{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.projects h2{
+    position: absolute;
+    margin: 40px 0;
+}
+
+.swiper{
+    width: 100%;
+    max-width: 1920px;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.swiper-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.swiper-slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 95%;
+    box-shadow: 0 0 20px rgba(230, 237, 243, 0.2);
     background-color: var(--color-highlight-background);
+    border-radius: 15px;
+}
+
+.project-img{
+    width: 500px;
+    height: 360px;
+    border-radius: 15px;
+}
+
+.project-content{
+    width: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.project-name{
+    margin-bottom: 40px;
     font-family: var(--font-open);
-    color: var(--color-primary);
-    box-shadow: 0 0px 20px rgba(53, 53, 53, 0.5);
+}
+
+.project-txt{
+    margin-left: 11px;
+    font-weight: bold;
+    font-family: var(--font-open);
 }
 
 .project-languages{
     display: flex;
     justify-content: space-evenly;
-    transition: color 0.1s ease-in-out;
-    cursor:pointer;
-}
-
-.project-languages p{
-    width: min-content;
-    padding-inline: 5px;
-    font-size: 13px;
-}
-
-.project-languages p:hover{
-    width: min-content;
-    transition: color 0.1s ease-in-out;
-    color: var(--color-highlight);
-}
-
-.card-body-links{
-    display: flex;
-    justify-content: center;
-}
-
-.card-body-links a{
-    color: var(--color-highlight);
-    text-decoration: none;
-}
-
-.card-title{
-    text-align: center;
-}
-
-.card-text{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 15px;
-    font-family: var(--font-open);
-}
-
-.card-img-top{
-    aspect-ratio: 16/13;
-}
-
-.swiper-slide{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.icons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 40px;
-}
-
-.swiper{
     width: 100%;
-    padding: 20px 0 50px 0;
 }
+
+.project-links{
+    display: flex;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.project-links a{
+    color: var(--color-highlight);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

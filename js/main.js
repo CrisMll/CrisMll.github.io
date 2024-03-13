@@ -62,3 +62,17 @@ function copyEmail(){
 
 // PROJECTS SLIDER 
 
+const swiper = new Swiper(".mySwiper",{
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: false,
+    coverflowEffect:{
+        depth:600,
+        modifer:1,
+        slidesShadows:true,
+        rotate:0,
+        stretch:0
+    }
+})
