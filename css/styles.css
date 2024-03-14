@@ -556,11 +556,18 @@ header {
 
 /* SOCIAL LINKS BAR*/
 
+.social-bar {
+    Top: 0;
+    Left: 0;
+    position: fixed;
+    margin-top: 30vh;
+}
 
 .social-ul{
     margin: 120px 0;
     height: 270px;
     width: 30px;
+    margin-left: -10px;
 }
 
 .social-item{
