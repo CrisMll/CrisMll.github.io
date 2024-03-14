@@ -169,25 +169,12 @@ header {
 /*BUTTONS*/
 
 
-
-
 .contact-box {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3.5px;
+    gap: 10px;
 
-}
-
-.contact-box-button {
-    gap: 5px;
-    max-width: 92px;
-    background-color: transparent;
-    color: var(--color-pink);
-    border: none;
-    border-radius: 1000;
-    width: min-content;
-    margin-top: 15px;
 }
 
 .container-email {
@@ -198,9 +185,11 @@ header {
     margin-top: 10px;
 }
 
-.bi-clipboard {
+.fa-paper-plane, .fa-clipboard {
     background-color: var(--color-highlight-background);
-    color: var(--color-pink);
+    color: var(--color-highlight);
+    font-size: 23px;
+    border: none;
 }
 
 .col-2-body {color: var(--color-azul);}
@@ -320,7 +309,7 @@ header {
 
 .container-section-about {
     background-color: var(--color-highlight-background);
-    padding: 90px 20px;
+    padding: 100px 20px;
     margin: 0 auto;
     margin-bottom: 40px;
     border-radius: 15px;
@@ -364,7 +353,8 @@ header {
 .img-cris-img {
     border-radius: 45px;
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
+    margin-top: -60px;
 }
 
 .row-contact {
@@ -381,23 +371,54 @@ header {
     margin-bottom: 0;
     padding-inline: 10px;
     border-radius: 8px;
+    border: 2px solid var(--color-highlight);
+    transition: color .1s ease-in-out;
+}
+
+.email-text:hover{
+    color: var(--color-purple);
+    box-shadow:  0 0 10px rgba(186, 124, 228, 0.2); 
 }
 
 .email-text a {
     text-decoration: none;
-    color: var(--color-pink);
+    color: var(--color-primary);
     font-family: var(--font-carme);
     font-weight: 400;
     
 }
 
-.bi-clipboard2-fill {
-    margin-left: 15px;
-    cursor: pointer;
-}
-
 .bi-download {
     font-weight: 450;
+}
+
+.col-10-line-resume{
+    width: 300px;
+}
+
+
+.col-10-line-resume{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    color: var(--color-highlight);
+    color: var(--color-primary);
+}
+
+.resume-box-button {
+    gap: 15px;
+    background-color: var(--color-highlight-background);
+    color: var(--color-primary);
+    border: 2px solid var(--color-highlight);
+    padding: 10px;
+    border-radius: 10px;
+    width: max-content;
+    transition: color 0.1s ease-in-out;
+}
+
+.resume-box-button:hover{
+    color: var(--color-purple);
+    box-shadow:  0 0 10px rgba(186, 124, 228, 0.2); 
 }
 
 
