@@ -598,6 +598,10 @@ header {
     cursor: pointer;
 }
 
+.lang:hover{
+    box-shadow:  0 0 10px rgba(186, 124, 228, 0.3); 
+}
+
 .lang-html{
     color: orange;
 }
@@ -656,6 +660,3 @@ header {
     
 }
 
-.lang:hover{
-    box-shadow:  0 0 10px rgba(186, 124, 228, 0.2); 
-}
