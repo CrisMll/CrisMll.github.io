@@ -50,9 +50,9 @@ h1,h2,h3,h4 {
     margin: 15px;
 }
 
-.h2-sections {
+.heading-sections {
     text-align: center;
-    margin: 40px;
+    margin: 50px;
 }
 
 p {text-wrap: pretty;}
@@ -163,6 +163,85 @@ header {
     .nav-list.link {
         color: var(--color-primary);
     }
+}
+
+
+/* SOCIAL LINKS BAR*/
+
+.social-bar {
+    Top: 0;
+    Left: 0;
+    position: fixed;
+    height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-ul{
+    margin-left: -10px;
+    display: inline-block;
+}
+
+.social-item{
+    list-style: none;
+    height: 55px;
+    width: 70px;
+    margin: 0 -40px;
+    position: relative;
+}
+
+.social-item a{
+    font-size: 20px;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+}
+
+.social-item a, .social-item span {
+    position: absolute;
+    color: var(--color-highlight);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.social-item span{
+    transition: .5s;
+    height: 28px;
+    width: 70px;
+    margin: 15px -10px;
+    font-family: var(--font-open);
+    font-size: .8em;
+}
+
+.social-item:hover span{
+    transform: translateX(92px);
+}
+
+.social-item span::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 12px;
+    background-color: var(--color-highlight-background);
+    clip-path: polygon(0 49%, 100% 0, 100% 100%);
+    left: -10px;
+}
+
+.bi, .fa-brands{
+    background-color: var(--color-highlight-background);
+}
+
+.bi-github{
+    border-top-right-radius: 8px;
+}
+
+.fa-codepen{
+    border-bottom-right-radius: 8px;
 }
 
 
@@ -502,37 +581,21 @@ header {
     color: var(--color-highlight);
 }
 
-/* LANGUAGES SECTION */
+/* TRAINING SECTION */
 
-.container-section-studies{
-    margin: 0 auto;
-}
-
-.languages-section-heading{
-    margin: 40px 0 60px 0;
-}
-
-.box-mywork{
-    background-color: var(--color-highlight-background);
-    border-radius: 10px;
-    padding: 20px;
-}
-
-.row-mywork{
-    align-items: baseline;
-    
-}
 
 .lang{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 10000px;
     margin: 10px;
     border: 1px solid grey;
     background-color: var(--color-highlight-background);
+    transition: color 0.1s ease-in-out;
+    cursor: pointer;
 }
 
 .lang-html{
@@ -554,77 +617,45 @@ header {
     color: var(--color-purple-blue);
 }
 
-/* SOCIAL LINKS BAR*/
-
-.social-bar {
-    Top: 0;
-    Left: 0;
-    position: fixed;
-    margin-top: 30vh;
+.box-mywork{
+    background-color: var(--color-highlight-background);
+    border-radius: 10px;
+    padding: 20px;
+    width: fit-content;
+    max-width: 560px;
+    margin: 50px auto;
+    
 }
 
-.social-ul{
-    margin: 120px 0;
-    height: 270px;
-    width: 30px;
-    margin-left: -10px;
+.row-mywork{
+    justify-content: center;
+    align-items: baseline;
+    
+    
 }
 
-.social-item{
-    list-style: none;
-    height: 55px;
-    width: 70px;
-    margin: 0 -40px;
-    position: relative;
-}
-
-.social-item a{
+.bi-code-slash,
+.bi-pencil{
     font-size: 20px;
-    text-decoration: none;
-    height: 100%;
-    width: 100%;
+    color: var(--color-highlight);
 }
 
-.social-item a, .social-item span {
-    position: absolute;
-    color: var(--color-highlight);
+.col-2-work{
+    width: fit-content;
+}
+
+.row.row-skills-section {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.col-6.languages-section {
     display: flex;
     justify-content: center;
-    align-items: center;
-
+    
 }
 
-.social-item span{
-    transition: .5s;
-    height: 28px;
-    width: 70px;
-    margin: 15px -10px;
-    font-family: var(--font-open);
-    font-size: .8em;
-}
-
-.social-item:hover span{
-    transform: translateX(92px);
-}
-
-.social-item span::before{
-    content: '';
-    position: absolute;
-    height: 20px;
-    width: 12px;
-    background-color: var(--color-highlight-background);
-    clip-path: polygon(0 49%, 100% 0, 100% 100%);
-    left: -10px;
-}
-
-.bi, .fa-brands{
-    background-color: var(--color-highlight-background);
-}
-
-.bi-github{
-    border-top-right-radius: 8px;
-}
-
-.fa-codepen{
-    border-bottom-right-radius: 8px;
+.lang:hover{
+    box-shadow:  0 0 10px rgba(186, 124, 228, 0.2); 
 }
